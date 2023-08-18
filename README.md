@@ -1,13 +1,14 @@
 # restapi-demo
 
-# Express REST API with TypeScript
+# Express REST API with TypeScript and Swagger Documentation
 
-This is a simple Express-based REST API built using TypeScript. It provides endpoints to manage a list of people with their personal information.
+This is a simple Express-based REST API built using TypeScript. It provides endpoints to manage a list of people with their personal information. The API documentation is powered by Swagger.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Swagger Documentation](#swagger-documentation)
 - [Endpoints](#endpoints)
 - [Contributing](#contributing)
 - [License](#license)
@@ -19,7 +20,6 @@ This is a simple Express-based REST API built using TypeScript. It provides endp
 
    ```bash
    git clone -b master https://github.com/gocallum/restapi-demo.git
-
    ```
 
 3. Navigate to the project directory:
@@ -44,9 +44,20 @@ This is a simple Express-based REST API built using TypeScript. It provides endp
 
    The server will run on port 3000 by default. You can modify the `PORT` variable in the code to change the port number.
 
-2. You can use API client tools like `curl` or API testing tools like Postman to interact with the API.
+2. Access Swagger Documentation:
 
+   Open your web browser and navigate to `http://localhost:3000/api-docs` to access the Swagger UI for interactive API documentation. This UI provides detailed information about the API endpoints, request/response examples, and more.
 
+3. Interact with the API:
+
+   You can use API client tools like `curl` or API testing tools like Postman to interact with the API.
+
+## Swagger Documentation
+
+This project integrates Swagger for API documentation. The Swagger UI provides an interactive way to explore and test the available endpoints. The API documentation is automatically generated based on the code annotations. To access the Swagger UI:
+
+- Start the server using `npx ts-node src/index.ts`.
+- Open your web browser and go to `http://localhost:3000/api-docs`.
 
 ## Endpoints
 
@@ -62,59 +73,14 @@ The API provides the following endpoints:
 
 Contributions are welcome! If you find any bugs or want to add features, please feel free to open issues and pull requests in this repository.
 
+To contribute code changes:
+
 1. Fork the repository.
 2. Create your feature branch: `git checkout -b feature-name`
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin feature-name`
-5. Create a pull request.
-
-To submit your latest code changes back to GitHub, follow these steps:
-
-1. **Check for Changes:**
-   Make sure you are in your project directory on your local machine and check for any changes in your code:
-
-   ```sh
-   git status
-   ```
-
-   This will show you a list of modified files.
-
-2. **Add Changes to Staging:**
-   Add the modified files to the staging area for commit:
-
-   ```sh
-   git add .
-   ```
-
-   The `.` adds all changed files. If you want to add specific files, replace `.` with the file names.
-
-3. **Commit Changes:**
-   Commit the staged changes with a meaningful message:
-
-   ```sh
-   git commit -m "Updated code with new changes"
-   ```
-
-   Replace the message with a concise description of the changes you made.
-
-4. **Push to GitHub:**
-   Push the committed changes to your GitHub repository:
-
-   ```sh
-   git push origin master
-   ```
-
-   This assumes you're pushing to the `master` branch. If you're using a different branch, replace `master` with the appropriate branch name.
-
-5. **Provide GitHub Credentials:**
-   If you haven't previously set up your GitHub credentials, Git might prompt you for your username and password. Alternatively, if you're using SSH keys, you won't need to enter credentials.
-
-6. **Verify on GitHub:**
-   Once the push is successful, visit your GitHub repository in a web browser to verify that the changes have been updated.
-
-If you encounter any issues during this process, double-check your internet connection, repository permissions, and credentials to ensure a smooth push.
+5. Create a pull request on GitHub.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
