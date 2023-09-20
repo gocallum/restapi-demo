@@ -56,7 +56,7 @@ This is a simple Express-based REST API built using TypeScript. It provides endp
 
 This project integrates Swagger for API documentation. The Swagger UI provides an interactive way to explore and test the available endpoints. The API documentation is automatically generated based on the code annotations. To access the Swagger UI:
 
-- Start the server using `npx ts-node src/index.ts`.
+- Start the server using ` `.
 - Open your web browser and go to `http://localhost:3000/api-docs`.
 
 ## Endpoints
